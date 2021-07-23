@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/base.css">
+        <title>健康管理</title>
+    </head>
+
+    <body>
+        <h1 id="top">健康管理</h1>
+
+        <div>
+            <h2>日々の管理</h2>
+            <ul>
+                <li>睡眠</li>
+                <li>運動</li>
+                <li>体重管理</li>
+            </ul>
+
+
+        </div>
+
+
+        <form action="#" method="POST">
+            <div>
+                <label>
+                    睡眠時間：
+                    <input type="text" name="sleeping"> 
+                </label>
+
+            </div>
+
+            
+            <div>
+                <label>
+                    運動時間：
+                    <input type="text" name="exercise">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    体重：
+                    <input type="text" name="weight">
+                </label>
+            </div>
+
+
+            <label>
+                <input type="radio" name="sex" value="male">
+                男性
+            </label>
+            <label>
+                <input type="radio" name="sex" value="female">
+                女性
+            </label>
+            <label>
+                <input type="radio" name="sex" value="other">
+                その他
+            </label>
+
+
+            <div>
+                <label for="recording">入力日</label>
+                <input type="date" name="recording" id="recording">
+            </div>
+
+
+            <div>
+                <input type="reset" value="リセット">
+            </div>
+
+        </form>
+
+
+        <div id="box1">
+            <p>睡眠</p>    
+            <nav id="menu">
+                <ul>
+                    <li>若者：体内時計による生活リズム管理</li>
+                    <li>勤労者：疲労回復</li>
+                    <li>高齢者：生活習慣病予防</li>
+                </ul>
+            </nav>
+
+            <table border="1" id="table1">
+                <tr>
+                    <th></th>
+                    <th>10代前半</th>
+                    <th>~25歳</th>
+                    <th>~45歳</th>
+                    <th>~65歳</th>
+                </tr>
+                <tr>
+                    <th>推奨睡眠時間</th>
+                    <td>8時間以上</td>
+                    <td>7時間</td>
+                    <td>6.5時間</td>
+                    <td>6時間</td>
+                </tr>    
+            </table>          
+        </div>
+
+
+        <div id="box2">
+            <p>運動</p>
+
+            <nav id="menu">
+                <ul>
+                    <li>ウォーキング</li>
+                    <li>ジョギング</li>
+                    <li>ランニング</li>
+                    <li>水泳</li>
+                    <li>筋トレ</li>
+                </ul>
+            </nav>
+
+            <div>
+                <p>運動による消費カロリー(kcal/hour)</p>
+                <canvas id="Barchart"></canvas>
+            </div>
+        </div>
+
+
+        <div id="box3">
+            <p>体重管理</p>
+            <dl id="bmi">
+                <dt>BMI</dt>
+                <dd>=体重(kg)÷身長(m)÷身長(m)</dd>
+                <dd>標準体型BMI：18.5－25</dd>
+            </dl>
+
+
+        </div>
+
+        <div>
+            <h2>今日のチャレンジ</h2>
+            <button type="button" onclick="チャレンジ(1)" id="button1">やってみよう</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+
+        <script src="js/report.js"></script>
+
+        <a href="#top">トップに戻る</a>
+
+    </body>

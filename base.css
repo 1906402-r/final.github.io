@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+
+
+
+#box1 {
+    width: 50%;
+    height: 200px;
+    background-color: rgb(86, 245, 179);
+    font-size: 1.5em;
+}
+
+#box2 {
+    width: 50%;
+    height: 600px;
+    background-color: rgb(255, 249, 166);
+    font-size: 1.5em;
+}
+
+#table1 {
+    font-size: small;
+}
+
+#menu > ul {
+    list-style: none;
+    padding-left: 0px;
+    font-size: small;
+}
+
+#box3 {
+    width: 50%;
+    height: 200px;
+    background-color: rgb(243, 182, 160);
+    font-size: 1.5em;
+}
+
+#bmi {
+    font-size: smaller;
+}
+
+#button1 {
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    background:rgb(245, 167, 228);
+    color:gray;
+    font-size: 1.5em;
+}
